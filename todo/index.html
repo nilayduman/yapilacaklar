@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yapılacaklar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-image: url('atina2.jpg')">
+    <div class="clock-calendar-container">
+        <div id="clock-container">
+            <span id="clock"></span>
+        </div>
+        <div id="calendar-container">
+            <span id="calendar"></span>
+        </div>
+    </div>
+    <div class="container">
+     <h1 class="todo-title">YAPILACAKLAR</h1>
+        <div class="todo-section">
+            <h2>"Çalışacağım, kendimi hazırlayacağım ve bir gün şans kapımı çalacak. (Abraham Lincoln)"</h2>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="Yeni görev ekle..." required>
+                <input type="date" id="todo-date" required>
+                <input type="time" id="todo-time" required>
+                <button type="submit">Ekle</button>
+            </form>
+            <ul id="todo-list">
+                <!-- To-Do items will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

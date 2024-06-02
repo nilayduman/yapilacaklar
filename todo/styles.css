@@ -1,0 +1,230 @@
+body {
+     font-family: 'Times New Roman', Times, serif;
+     background-image: url('atina2.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 70vh;
+     margin: 0;
+ }
+ 
+ h1 {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 100px;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+     margin-top: 50px;
+ }
+ 
+ .container {
+     position: relative;
+     background: linear-gradient(150deg, #a38053 0%, #ebedee 100%);
+     padding: 40px;
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+     text-align: center;
+     border-radius: 25px;
+     transition: transform 0.3s ease;
+     margin-top: 20px;
+ }
+ 
+ .container h1 {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 60px;
+     color: #0e0d0d;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-align: center;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .container .todo-section {
+     max-width: 600px;
+     margin: 0 auto;
+ }
+ 
+ .container:hover {
+     transform: scale(1.05);
+ }
+ 
+ h1 {
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 100px;
+     color: #fff;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     text-align: center;
+ }
+ 
+ .clock-calendar-container {
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     display: flex;
+ }
+ 
+ #clock-container,
+ #calendar-container {
+     background-color: rgba(255, 255, 255, 0.7);
+     padding: 10px 20px;
+     border-radius: 5px;
+     margin-right: 10px;
+ }
+ 
+ #clock,
+ #calendar {
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 20px;
+     color: #333;
+ }
+ 
+ .clock-calendar-container {
+     animation: fadeInRight 1s ease forwards;
+ }
+ 
+ @keyframes fadeInRight {
+     from {
+         opacity: 0;
+         transform: translateX(50px);
+     }
+     to {
+         opacity: 1;
+         transform: translateX(0);
+     }
+ }
+ 
+ #clock-container,
+ #calendar-container {
+     animation: shimmer 1s ease-in-out infinite alternate;
+ }
+ 
+ @keyframes shimmer {
+     0% {
+         background-color: rgba(208, 233, 97, 0.7);
+     }
+     100% {
+         background-color: rgba(240, 242, 250, 0.9);
+     }
+ }
+ 
+ 
+ #todo-form {
+     margin-bottom: 20px;
+ }
+ 
+ #todo-input {
+     padding: 15px;
+     font-size: 18px;
+     width: calc(100% - 32px);
+     border: 2px solid #007BFF;
+     border-radius: 8px;
+     margin-bottom: 10px;
+ }
+ 
+ #todo-input:focus {
+     outline: none;
+     border-color: #0056b3;
+ }
+ 
+ #todo-form button {
+     padding: 15px 25px;
+     border: none;
+     background: #007BFF;
+     color: white;
+     border-radius: 25px;
+     cursor: pointer;
+     font-size: 16px;
+     transition: background 0.3s ease;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #todo-form button:hover {
+     background: #0056b3;
+ }
+ 
+ #todo-list {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ #todo-list li {
+     background: white;
+     padding: 15px;
+     margin: 10px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 8px;
+     font-size: 16px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     transition: transform 0.2s ease, background 0.3s ease;
+     cursor: move;
+ }
+ 
+ #todo-list li:hover {
+     transform: translateX(10px);
+     background: #f1f1f1;
+ }
+ 
+ #todo-list li.completed {
+     text-decoration: line-through;
+     color: #888;
+ }
+ 
+ #todo-list li button {
+     background: none;
+     border: none;
+     color: #d9534f;
+     cursor: pointer;
+     font-size: 14px;
+     transition: color 0.3s ease;
+ }
+ 
+ #todo-list li button:hover {
+     color: #c9302c;
+ }
+ 
+ .todo-item.completed:before {
+     content: '\2714';
+     color: #28a745;
+     margin-right: 5px;
+ }
+ 
+ .todo-section {
+     flex: 1;
+     max-width: 600px;
+ }
+ .todo-section h1,
+.todo-section h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.todo-title {
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ .todo-list li {
+     transition: background-color 0.3s ease;
+ }
+ 
+ .todo-list li:hover {
+     background-color: #f1f1f1;
+ }
+ 
+ .todo-item {
+     background-color: #fff;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .todo-item:hover {
+     background-color: #f1f1f1;
+ }
+ 
+ 
+ 
